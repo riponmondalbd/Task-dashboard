@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Appointment from "./NavContent/Appointment";
 import CallLogs from "./NavContent/CallLogs";
-import Dashboard from "./NavContent/Dashboard";
+import Dashboard from "./NavContent/Dashboard/Dashboard";
 import Settings from "./NavContent/Settings";
 
 const Content = () => {
