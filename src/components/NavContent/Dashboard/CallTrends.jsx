@@ -1,4 +1,11 @@
-import { AreaChart } from "recharts";
+import {
+  Area,
+  AreaChart,
+  CartesianGrid,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 // data
 const data = [
@@ -79,6 +86,19 @@ const CallTrends = () => {
               <stop offset="100%" stopColor="#3B82F600" />
             </linearGradient>
           </defs>
+
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+
+          <Area
+            type="monotone"
+            dataKey="uv"
+            stroke="#3B82F6"
+            strokeWidth={2}
+            fill="url(#areaFill)"
+          />
         </AreaChart>
       </div>
     </div>
