@@ -7,9 +7,9 @@ const Dashboard = () => {
       <TopNavbar title={"Dashboard Overview"} />
 
       {/* activity card */}
-      <div className="p-6 grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="p-6 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
         {/* total calls */}
-        <div className="h-36.5 w-93.5 rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
+        <div className="h-36.5 lg:w-93.5 md:w-80 sm:w-full rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
           <div className="p-6.25">
             <p className="text-[14px] font-normal secondary-color">
               Total Calls Today
@@ -25,7 +25,7 @@ const Dashboard = () => {
         </div>
 
         {/* ai handled calls */}
-        <div className="h-36.5 w-93.5 rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
+        <div className="h-36.5 lg:w-93.5 md:w-80 sm:w-full rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
           <div className="p-6.25">
             <p className="text-[14px] font-normal secondary-color">
               AI-Handled Calls
@@ -41,7 +41,7 @@ const Dashboard = () => {
         </div>
 
         {/* Warm Transfer */}
-        <div className="h-36.5 w-93.5 rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
+        <div className="h-36.5 lg:w-93.5 md:w-80 sm:w-full rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
           <div className="p-6.25">
             <p className="text-[14px] font-normal secondary-color">
               Warm Transfer
@@ -61,7 +61,7 @@ const Dashboard = () => {
         </div>
 
         {/* Appointments Booked */}
-        <div className="h-36.5 w-93.5 rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
+        <div className="h-36.5 lg:w-93.5 md:w-80 sm:w-full rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
           <div className="p-6.25">
             <p className="text-[14px] font-normal secondary-color">
               Appointments Booked
@@ -81,7 +81,7 @@ const Dashboard = () => {
         </div>
 
         {/* Missed/Failed Calls */}
-        <div className="h-36.5 w-93.5 rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
+        <div className="h-36.5 lg:w-93.5 md:w-80 sm:w-full rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
           <div className="p-6.25">
             <p className="text-[14px] font-normal secondary-color">
               Missed/Failed Calls
@@ -97,7 +97,7 @@ const Dashboard = () => {
         </div>
 
         {/* Avg Call Duration */}
-        <div className="h-36.5 w-93.5 rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
+        <div className="h-36.5 lg:w-93.5 md:w-80 sm:w-full rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
           <div className="p-6.25">
             <p className="text-[14px] font-normal secondary-color">
               Avg Call Duration
