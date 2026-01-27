@@ -7,7 +7,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
-    <div className="grid grid-cols-[241px_auto] h-screen">
+    <div className="grid grid-cols-[60px_auto] md:grid-cols-[241px_auto] h-screen">
       <BrowserRouter>
         {/* sidebar */}
         <Sidebar />

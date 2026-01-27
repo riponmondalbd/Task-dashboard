@@ -5,7 +5,7 @@ const LeftNav = () => {
   return (
     <div>
       {/* navigation items */}
-      <div className="mx-2 space-y-7">
+      <div className="mx-2 space-y-7 justify-center md:justify-start">
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -13,7 +13,7 @@ const LeftNav = () => {
           }
         >
           <img className="w-8 h-8" src={assets.homeIcon} alt="home icon" />
-          <p className="primary-color text-[16px] font-medium">
+          <p className="primary-color text-[16px] font-medium hidden md:block">
             Dashboard Overview
           </p>
         </NavLink>
@@ -24,7 +24,9 @@ const LeftNav = () => {
           }
         >
           <img className="w-8 h-8" src={assets.callIcon} alt="call icon" />
-          <p className="primary-color text-[16px] font-medium">Call Logs</p>
+          <p className="primary-color text-[16px] font-medium hidden md:block">
+            Call Logs
+          </p>
         </NavLink>
         <NavLink
           to="/appointments"
@@ -37,7 +39,9 @@ const LeftNav = () => {
             src={assets.appointmentIcon}
             alt="appointment icon"
           />
-          <p className="primary-color text-[16px] font-medium">Appointment</p>
+          <p className="primary-color text-[16px] font-medium hidden md:block">
+            Appointment
+          </p>
         </NavLink>
         <NavLink
           to="/settings"
@@ -50,7 +54,9 @@ const LeftNav = () => {
             src={assets.settingsIcon}
             alt="settings icon"
           />
-          <p className="primary-color text-[16px] font-medium">Settings</p>
+          <p className="primary-color text-[16px] font-medium hidden md:block">
+            Settings
+          </p>
         </NavLink>
       </div>
     </div>
