@@ -74,11 +74,11 @@ const CallTrends = () => {
       {/* chart section */}
       <div>
         <AreaChart
-          width={"98%"}
+          width={"100%"}
           height={300}
           responsive={true}
           data={data}
-          margin={{ top: 5, right: 0, left: 0, bottom: 0 }}
+          margin={{ top: 5, right: 30, left: 0, bottom: 20 }}
         >
           {/* gradients logic */}
           <defs>
