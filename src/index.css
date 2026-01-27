@@ -13,6 +13,10 @@ body {
   );
 }
 
+.logo {
+  background: linear-gradient(180deg, #0f8 0%, #00d4ff 100%);
+}
+
 .primary-color {
   color: #fff;
 }

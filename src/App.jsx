@@ -1,11 +1,13 @@
+import MainContent from "./components/MainContent";
+import Sidebar from "./components/Sidebar/Sidebar";
+
 function App() {
   return (
-    <div>
-      <h1 className="primary-color">hello world</h1>
+    <div className="grid grid-cols-[241px_auto] h-screen">
+      <Sidebar />
+      <MainContent />
     </div>
   );
 }
 
 export default App;
-
-// background: linear-gradient(119deg, #020618 -34.38%, #162456 54.59%, #0F172B 143.57%);
