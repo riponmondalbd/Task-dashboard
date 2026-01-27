@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import assets from "../common/assets";
 
 const LeftNav = () => {
@@ -5,32 +6,32 @@ const LeftNav = () => {
     <div>
       {/* navigation items */}
       <div className="ml-2 space-y-7">
-        <div className="flex items-center gap-4">
+        <NavLink to="/" className="flex items-center gap-4">
           <img className="w-8 h-8" src={assets.homeIcon} alt="home icon" />
           <p className="primary-color text-[16px] font-medium">
             Dashboard Overview
           </p>
-        </div>
-        <div className="flex items-center gap-4">
+        </NavLink>
+        <NavLink to="/call-logs" className="flex items-center gap-4">
           <img className="w-8 h-8" src={assets.callIcon} alt="call icon" />
           <p className="primary-color text-[16px] font-medium">Call Logs</p>
-        </div>
-        <div className="flex items-center gap-4">
+        </NavLink>
+        <NavLink to="/appointments" className="flex items-center gap-4">
           <img
             className="w-8 h-8"
             src={assets.appointmentIcon}
             alt="appointment icon"
           />
           <p className="primary-color text-[16px] font-medium">Appointment</p>
-        </div>
-        <div className="flex items-center gap-4">
+        </NavLink>
+        <NavLink to="/settings" className="flex items-center gap-4">
           <img
             className="w-8 h-8"
             src={assets.settingsIcon}
             alt="settings icon"
           />
           <p className="primary-color text-[16px] font-medium">Settings</p>
-        </div>
+        </NavLink>
       </div>
     </div>
   );
