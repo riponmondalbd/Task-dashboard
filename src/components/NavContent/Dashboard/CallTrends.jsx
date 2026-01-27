@@ -1,3 +1,37 @@
+import { AreaChart } from "recharts";
+
+// data
+const data = [
+  {
+    name: "Mon",
+    uv: 45,
+  },
+  {
+    name: "Tue",
+    uv: 50,
+  },
+  {
+    name: "Wed",
+    uv: 44,
+  },
+  {
+    name: "Thu",
+    uv: 65,
+  },
+  {
+    name: "Fri",
+    uv: 75,
+  },
+  {
+    name: "Sat",
+    uv: 85,
+  },
+  {
+    name: "Sun",
+    uv: 50,
+  },
+];
+
 const CallTrends = () => {
   return (
     <div className="rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80]">
@@ -31,7 +65,22 @@ const CallTrends = () => {
       </div>
 
       {/* chart section */}
-      <div></div>
+      <div>
+        <AreaChart
+          width={"98%"}
+          height={300}
+          data={data}
+          margin={{ top: 5, right: 0, left: 0, bottom: 0 }}
+        >
+          <defs>
+            {/* Fill gradient */}
+            <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#3B82F6CC" />
+              <stop offset="100%" stopColor="#3B82F600" />
+            </linearGradient>
+          </defs>
+        </AreaChart>
+      </div>
     </div>
   );
 };
