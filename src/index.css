@@ -24,3 +24,10 @@ body {
 .secondary-color {
   color: #90a1b9;
 }
+
+/* for call button */
+.call-button {
+  border-radius: 14px;
+  padding: 13px;
+  background: linear-gradient(135deg, #2b7fff 0%, #00b8db 100%);
+}
