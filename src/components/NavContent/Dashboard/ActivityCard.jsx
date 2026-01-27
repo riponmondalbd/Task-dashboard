@@ -2,7 +2,7 @@ import assets from "../../common/assets";
 
 const ActivityCard = () => {
   return (
-    <div className="p-6 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+    <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
       {/* total calls */}
       <div className="h-36.5 lg:w-93.5 md:w-80 sm:w-full rounded-2xl border border-[#2B7FFF33]/80 bg-[#0F172B80] flex justify-between">
         <div className="p-6.25">

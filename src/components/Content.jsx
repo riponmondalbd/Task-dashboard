@@ -6,7 +6,7 @@ import Settings from "./NavContent/Settings";
 
 const Content = () => {
   return (
-    <div className="bg-linear-to-l from-[#020618]/90 via-[#14214e] to-[#0F172B]/99">
+    <div>
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/appointments" element={<Appointment />} />
