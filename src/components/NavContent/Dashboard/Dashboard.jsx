@@ -7,7 +7,7 @@ const Dashboard = () => {
     <div>
       <TopNavbar title={"Dashboard Overview"} />
 
-      <div className="p-6 space-y-6">
+      <div className="pl-6 py-6 pr-6 xl:pr-0 space-y-6">
         <ActivityCard />
         <CallTrends />
       </div>
