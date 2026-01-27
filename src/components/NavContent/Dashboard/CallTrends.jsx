@@ -76,14 +76,23 @@ const CallTrends = () => {
         <AreaChart
           width={"98%"}
           height={300}
+          responsive={true}
           data={data}
           margin={{ top: 5, right: 0, left: 0, bottom: 0 }}
         >
+          {/* gradients logic */}
           <defs>
-            {/* Fill gradient */}
+            {/* area fill */}
             <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor="#3B82F6CC" />
+              <stop offset="75%" stopColor="#3B82F640" />
               <stop offset="100%" stopColor="#3B82F600" />
+            </linearGradient>
+
+            {/* stroke glow */}
+            <linearGradient id="areaStroke" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#60A5FA" />
+              <stop offset="100%" stopColor="#3B82F6" />
             </linearGradient>
           </defs>
 
@@ -93,10 +102,10 @@ const CallTrends = () => {
           <Tooltip />
 
           <Area
-            type="monotone"
+            type="basis"
             dataKey="uv"
-            stroke="#3B82F6"
-            strokeWidth={2}
+            stroke="url(#areaStroke)"
+            strokeWidth={2.5}
             fill="url(#areaFill)"
           />
         </AreaChart>
