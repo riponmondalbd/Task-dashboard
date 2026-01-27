@@ -1,0 +1,24 @@
+import assets from "./assets";
+
+const TopNavbar = ({ title }) => {
+  return (
+    <div className="flex items-center justify-between">
+      {/* title */}
+      <div>
+        <h2 className="text-[32px] font-normal primary-color ml-6">{title}</h2>
+      </div>
+
+      {/* notification and avatar */}
+      <div className="flex gap-10">
+        <img src={assets.notificationIcon} alt="notifications icon" />
+        <img
+          className="w-20 rounded-full my-2 mr-4.75"
+          src={assets.avatarImage}
+          alt="avatar image"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default TopNavbar;
