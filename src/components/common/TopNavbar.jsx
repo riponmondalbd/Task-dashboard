@@ -2,7 +2,7 @@ import assets from "./assets";
 
 const TopNavbar = ({ title }) => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="bg-[#111B3C] flex items-center justify-between">
       {/* title */}
       <div>
         <h2 className="text-[18px] md:text-[32px] font-normal primary-color ml-6">

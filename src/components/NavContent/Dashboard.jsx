@@ -4,7 +4,8 @@ const Dashboard = () => {
   return (
     <div>
       <TopNavbar title={"Dashboard Overview"} />
-      <h1>Dashboard Content</h1>
+
+      {/* activity card */}
     </div>
   );
 };
