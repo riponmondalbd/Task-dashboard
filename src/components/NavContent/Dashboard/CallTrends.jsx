@@ -96,17 +96,20 @@ const CallTrends = () => {
             </linearGradient>
           </defs>
 
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <CartesianGrid stroke="#1E293B" strokeDasharray="3 6" />
+
+          <XAxis dataKey="name" stroke="#94A3B8" />
+          <YAxis stroke="#94A3B8" />
           <Tooltip />
 
           <Area
-            type="basis"
+            type="monotone"
             dataKey="uv"
             stroke="url(#areaStroke)"
             strokeWidth={2.5}
             fill="url(#areaFill)"
+            dot={false}
+            activeDot={{ r: 4 }}
           />
         </AreaChart>
       </div>
