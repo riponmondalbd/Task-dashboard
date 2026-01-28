@@ -33,6 +33,51 @@ This project focuses on clean UI, data visualization, and dashboard-style layout
 
 Follow the instructions below to run this project locally.
 
-### 1️⃣ Clone the repository
+## Installation
+
+Here's how to install my project:
+
 ```bash
-git clone https://github.com/your-username/task-dashboard.git
+# Clone my repository
+git clone https://github.com/myusername/my-project.git
+
+# Install dependencies I require
+npm install
+
+# Start the development server I configured
+npm run dev
+```
+
+
+
+## Run My Project Locally
+
+Here's how I run it on my machine:
+```bash
+git clone https://github.com/myusername/my-project.git
+cd my-project
+npm install
+npm start
+```
+Visit `http://localhost:5173` to see it working
+
+
+
+
+
+## Deployment
+
+Here's how I deploy this project:
+
+1. Install dependencies: `npm install`
+2. Build production version: `npm run build`
+3. Deploy the `dist` folder to Netlify
+4. Configure environment variables via my dashboard
+
+
+
+
+
+<p align="center">
+  Made with ❤️ by Ripon.
+</p>
