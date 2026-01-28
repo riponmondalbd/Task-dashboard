@@ -18,8 +18,12 @@ const Settings = () => {
       <div className="pl-6 py-6 pr-6 xl:pr-0 space-y-6">
         {/* settings */}
         <div className="flex gap-4  md:gap-16">
-          <p className="text-white text-2xl font-normal">Profile</p>
-          <p className="text-white text-2xl font-normal">Password Settings</p>
+          <p className="text-white text-2xl font-normal cursor-pointer">
+            Profile
+          </p>
+          <p className="text-white text-2xl font-normal cursor-pointer">
+            Password Settings
+          </p>
         </div>
 
         {/* image and button */}
@@ -60,40 +64,50 @@ const Settings = () => {
         </div>
         {/* details */}
         {edit ? (
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="flex flex-col gap-2">
-              <p className="text-white text-[20px] font-medium">Full Name</p>
-              <input
-                type="text"
-                defaultValue={data.name}
-                className="text-white bg-[#0A0A0F80] py-3 px-4 rounded-[14px] border border-[#00FF8833] focus:outline-1 focus:outline-[#00FF8833]"
-              />
+          <div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex flex-col gap-2">
+                <p className="text-white text-[20px] font-medium">Full Name</p>
+                <input
+                  type="text"
+                  defaultValue={data.name}
+                  className="text-white bg-[#0A0A0F80] py-3 px-4 rounded-[14px] border border-[#00FF8833] focus:outline-1 focus:outline-[#00FF8833]"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <p className="text-white text-[20px] font-medium">Email</p>
+                <input
+                  type="email"
+                  defaultValue={data.email}
+                  className="text-white bg-[#0A0A0F80] py-3 px-4 rounded-[14px] border border-[#00FF8833] focus:outline-1 focus:outline-[#00FF8833]"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <p className="text-white text-[20px] font-medium">Store Name</p>
+                <input
+                  type="text"
+                  defaultValue={data.storeName}
+                  className="text-white bg-[#0A0A0F80] py-3 px-4 rounded-[14px] border border-[#00FF8833] focus:outline-1 focus:outline-[#00FF8833]"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <p className="text-white text-[20px] font-medium">
+                  Store Address
+                </p>
+                <input
+                  type="text"
+                  defaultValue={data.storeAddress}
+                  className="text-white bg-[#0A0A0F80] py-3 px-4 rounded-[14px] border border-[#00FF8833] focus:outline-1 focus:outline-[#00FF8833]"
+                />
+              </div>
             </div>
-            <div className="flex flex-col gap-2">
-              <p className="text-white text-[20px] font-medium">Email</p>
-              <input
-                type="email"
-                defaultValue={data.email}
-                className="text-white bg-[#0A0A0F80] py-3 px-4 rounded-[14px] border border-[#00FF8833] focus:outline-1 focus:outline-[#00FF8833]"
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <p className="text-white text-[20px] font-medium">Store Name</p>
-              <input
-                type="text"
-                defaultValue={data.storeName}
-                className="text-white bg-[#0A0A0F80] py-3 px-4 rounded-[14px] border border-[#00FF8833] focus:outline-1 focus:outline-[#00FF8833]"
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <p className="text-white text-[20px] font-medium">
-                Store Address
-              </p>
-              <input
-                type="text"
-                defaultValue={data.storeAddress}
-                className="text-white bg-[#0A0A0F80] py-3 px-4 rounded-[14px] border border-[#00FF8833] focus:outline-1 focus:outline-[#00FF8833]"
-              />
+            <div className="text-center">
+              <button
+                onClick={() => setEdit(!edit)}
+                className="w-full md:w-93.25 mt-20 bg-[#00C950] p-2 rounded-2xl text-2xl text-white font-bold cursor-pointer"
+              >
+                Save
+              </button>
             </div>
           </div>
         ) : (
