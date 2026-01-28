@@ -11,10 +11,10 @@ const TopNavbar = ({ title }) => {
       </div>
 
       {/* notification and avatar */}
-      <div className="flex gap-2 md:gap-10">
+      <div className="flex gap-2 md:gap-10 cursor-pointer">
         <img src={assets.notificationIcon} alt="notifications icon" />
         <img
-          className="w-12 md:w-20 rounded-full my-2 mr-4.75"
+          className="w-12 md:w-20 rounded-full my-2 mr-4.75 cursor-pointer"
           src={assets.avatarImage}
           alt="avatar image"
         />
