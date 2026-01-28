@@ -13,6 +13,8 @@ import homeIcon from "../../assets/images/icons/homeIcon.svg";
 import logoIcon from "../../assets/images/icons/logoIcon.svg";
 import logoutIcon from "../../assets/images/icons/logoutIcon.svg";
 import notificationIcon from "../../assets/images/icons/notificationsIcon.svg";
+import pagiLeft from "../../assets/images/icons/pagiLeft.svg";
+import pagiRight from "../../assets/images/icons/pagiRight.svg";
 import payIcon from "../../assets/images/icons/payIcon.svg";
 import searchIcon from "../../assets/images/icons/searchIcon.svg";
 import settingsIcon from "../../assets/images/icons/settingsIcon.svg";
@@ -22,6 +24,8 @@ import transferIcon from "../../assets/images/icons/transferIcon.svg";
 import yellowIcon from "../../assets/images/icons/yellowIcon.svg";
 
 const assets = {
+  pagiLeft,
+  pagiRight,
   grennTikIcon,
   copyIcon,
   yellowIcon,

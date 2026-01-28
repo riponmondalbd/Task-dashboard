@@ -1,6 +1,7 @@
 import TopNavbar from "../../common/TopNavbar";
 import BookingLink from "./BookingLink";
 import Cards from "./Cards";
+import Pagination from "./Pagination";
 import TableData from "./TableData";
 
 const Appointment = () => {
@@ -11,6 +12,7 @@ const Appointment = () => {
         <Cards />
         <BookingLink />
         <TableData />
+        <Pagination />
       </div>
     </div>
   );
