@@ -8,6 +8,7 @@ import clockIcon from "../../assets/images/icons/clockIcon.svg";
 import copyIcon from "../../assets/images/icons/copyIcon.svg";
 import crossIcon from "../../assets/images/icons/crossIcon.svg";
 import docIcon from "../../assets/images/icons/docIcon.svg";
+import editOutline from "../../assets/images/icons/edit-outline.svg";
 import grennTikIcon from "../../assets/images/icons/grennTikIcon.svg";
 import homeIcon from "../../assets/images/icons/homeIcon.svg";
 import logoIcon from "../../assets/images/icons/logoIcon.svg";
@@ -24,6 +25,7 @@ import transferIcon from "../../assets/images/icons/transferIcon.svg";
 import yellowIcon from "../../assets/images/icons/yellowIcon.svg";
 
 const assets = {
+  editOutline,
   pagiLeft,
   pagiRight,
   grennTikIcon,
