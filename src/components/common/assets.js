@@ -8,11 +8,13 @@ import homeIcon from "../../assets/images/icons/homeIcon.svg";
 import logoIcon from "../../assets/images/icons/logoIcon.svg";
 import logoutIcon from "../../assets/images/icons/logoutIcon.svg";
 import notificationIcon from "../../assets/images/icons/notificationsIcon.svg";
+import searchIcon from "../../assets/images/icons/searchIcon.svg";
 import settingsIcon from "../../assets/images/icons/settingsIcon.svg";
 import timeIcon from "../../assets/images/icons/timeIcon.svg";
 import transferIcon from "../../assets/images/icons/transferIcon.svg";
 
 const assets = {
+  searchIcon,
   crossIcon,
   logoIcon,
   appointmentIcon,
