@@ -2,7 +2,7 @@ import assets from "../../common/assets";
 
 const SearchSort = () => {
   return (
-    <div className="grid grid-cols-2 gap-6.5">
+    <div className="grid xl:grid-cols-2 gap-6.5">
       <div className="flex items-center gap-2 bg-[#0F172B80] border border-[#2B7FFF33] pl-10 py-3 rounded-[14px]">
         <img className="h-5 w-5" src={assets.searchIcon} alt="search icon" />
         <p className="font-normal text-[16px] text-[#62748E]">
@@ -10,7 +10,7 @@ const SearchSort = () => {
         </p>
       </div>
 
-      <div className="flex justify-end gap-6">
+      <div className="flex justify-center-safe xL:justify-end gap-2 md:gap-6">
         {/* all type */}
         <div>
           <select
