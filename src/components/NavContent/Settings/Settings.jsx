@@ -14,6 +14,7 @@ const Settings = () => {
 
   return (
     <div>
+      <title>Settings | task</title>
       <TopNavbar title={"Settings"} />
       <div className="pl-6 py-6 pr-6 xl:pr-0 space-y-6">
         {/* settings */}
