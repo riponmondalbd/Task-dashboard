@@ -39,8 +39,7 @@ Here's how to install my project:
 
 ```bash
 # Clone my repository
-git clone https://github.com/myusername/my-project.git
-
+git clone https://github.com/riponmondalbd/Task-dashboard.git
 # Install dependencies I require
 npm install
 
@@ -54,7 +53,7 @@ npm run dev
 
 Here's how I run it on my machine:
 ```bash
-git clone https://github.com/myusername/my-project.git
+git clone https://github.com/riponmondalbd/Task-dashboard.git
 cd my-project
 npm install
 npm start
